@@ -56,6 +56,7 @@ class setupViewController: UIViewController {
         UserDefaults.standard.synchronize()
         NotificationCenter.default.post(name : NSNotification.Name("labelTextRefresh"), object: nil)
         adjustBtn1.isEnabled = false
+        textFieldInit()
     }
     @IBOutlet weak var adjustBtn2: UIButton!
     @IBAction func adjustBtn2(_ sender: Any) {
@@ -63,6 +64,7 @@ class setupViewController: UIViewController {
         UserDefaults.standard.synchronize()
         NotificationCenter.default.post(name : NSNotification.Name("labelTextRefresh"), object: nil)
         adjustBtn2.isEnabled = false
+        textFieldInit()
     }
     @IBOutlet weak var adjustBtn3: UIButton!
     @IBAction func adjustBtn3(_ sender: Any) {
@@ -70,6 +72,7 @@ class setupViewController: UIViewController {
         UserDefaults.standard.synchronize()
         NotificationCenter.default.post(name : NSNotification.Name("labelTextRefresh"), object: nil)
         adjustBtn3.isEnabled = false
+        textFieldInit()
     }
     @IBOutlet weak var adjustBtn4: UIButton!
     @IBAction func adjustBtn4(_ sender: Any) {
@@ -77,6 +80,22 @@ class setupViewController: UIViewController {
         UserDefaults.standard.synchronize()
         NotificationCenter.default.post(name : NSNotification.Name("labelTextRefresh"), object: nil)
         adjustBtn4.isEnabled = false
+        textFieldInit()
+    }
+    @IBOutlet weak var totalBtn: UIButton!
+    @IBAction func totalBtn(_ sender: Any) {
+        if(adjustBtn1.isEnabled){
+            adjustBtn1.sendActions(for: .touchUpInside)
+        }
+        if(adjustBtn2.isEnabled){
+            adjustBtn2.sendActions(for: .touchUpInside)
+        }
+        if(adjustBtn3.isEnabled){
+            adjustBtn3.sendActions(for: .touchUpInside)
+        }
+        if(adjustBtn4.isEnabled){
+            adjustBtn4.sendActions(for: .touchUpInside)
+        }
     }
     
     func textFieldInit(){

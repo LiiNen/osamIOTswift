@@ -229,7 +229,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAe-bi-6XJ">
                                 <rect key="frame" x="244" y="64" width="131" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="적용하기"/>
+                                <state key="normal" title="저장"/>
                                 <connections>
                                     <action selector="adjustBtn1:" destination="BJU-OK-njX" eventType="touchUpInside" id="Uti-vg-VmD"/>
                                 </connections>
@@ -237,7 +237,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3US-fD-dzQ">
                                 <rect key="frame" x="286" y="153" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="저장"/>
                                 <connections>
                                     <action selector="adjustBtn2:" destination="BJU-OK-njX" eventType="touchUpInside" id="oTZ-Z3-cpM"/>
                                 </connections>
@@ -245,7 +245,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPh-Wp-Roz">
                                 <rect key="frame" x="286" y="222" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="저장"/>
                                 <connections>
                                     <action selector="adjustBtn3:" destination="BJU-OK-njX" eventType="touchUpInside" id="bwN-Zb-vhb"/>
                                 </connections>
@@ -253,9 +253,17 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JES-jD-vbq">
                                 <rect key="frame" x="286" y="294" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="저장"/>
                                 <connections>
                                     <action selector="adjustBtn4:" destination="BJU-OK-njX" eventType="touchUpInside" id="oMY-Kw-9zV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvr-hI-ffL">
+                                <rect key="frame" x="268" y="420" width="91" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="전체 저장"/>
+                                <connections>
+                                    <action selector="totalBtn:" destination="BJU-OK-njX" eventType="touchUpInside" id="rQO-PQ-yIb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -270,6 +278,7 @@
                         <outlet property="textField2" destination="tOM-qW-3RC" id="2yA-qS-XdL"/>
                         <outlet property="textField3" destination="DJf-qr-ZtU" id="9EZ-vL-mPb"/>
                         <outlet property="textField4" destination="b1n-Re-mNI" id="KgB-Sm-JvF"/>
+                        <outlet property="totalBtn" destination="kvr-hI-ffL" id="oxE-id-btr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mVw-Bf-hFS" userLabel="First Responder" sceneMemberID="firstResponder"/>
