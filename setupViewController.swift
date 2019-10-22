@@ -125,14 +125,15 @@ class setupViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
+    //behind : view name
+    @IBOutlet weak var oneView: UIView!
+    @IBOutlet weak var upperView: UIView!
+    @IBOutlet weak var lowerView: UIView!
+    @IBOutlet weak var betweenView: UIView!
+    @IBOutlet weak var firstView: UIView!
+    @IBOutlet weak var secondView: UIView!
+    @IBOutlet weak var thirdView: UIView!
+    @IBOutlet weak var fourthView: UIView!
 
 }
