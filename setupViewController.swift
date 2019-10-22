@@ -99,11 +99,6 @@ class setupViewController: UIViewController {
     }
     
     func textFieldInit(){
-        adjustBtn1.isEnabled = false
-        adjustBtn2.isEnabled = false
-        adjustBtn3.isEnabled = false
-        adjustBtn4.isEnabled = false
-        
         textField1.placeholder =  userdefaultExists(key: "label1") ? UserDefaults.standard.string(forKey: "label1") : "1번 수납함"
         textField2.placeholder =  userdefaultExists(key: "label2") ? UserDefaults.standard.string(forKey: "label2") : "2번 수납함"
         textField3.placeholder =  userdefaultExists(key: "label3") ? UserDefaults.standard.string(forKey: "label3") : "3번 수납함"
@@ -117,6 +112,12 @@ class setupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         textFieldInit()
+        
+        adjustBtn1.isEnabled = false
+        adjustBtn2.isEnabled = false
+        adjustBtn3.isEnabled = false
+        adjustBtn4.isEnabled = false
+        
         // Do any additional setup after loading the view.
     }
     
