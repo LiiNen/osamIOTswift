@@ -13,6 +13,7 @@ class initViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        viewMove();
         // Do any additional setup after loading the view.
     }
 
@@ -21,6 +22,12 @@ class initViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func viewMove(){
+        let time = DispatchTime.now() + .seconds(2)
+        DispatchQueue.main.asyncAfter(deadline: time){
+            self.performSegue(withIdentifier: "mainSegue", sender: nil)
+        }
+    }
 
     /*
     // MARK: - Navigation
