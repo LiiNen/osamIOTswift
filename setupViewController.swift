@@ -1,5 +1,5 @@
 //
-//  initViewController.swift
+//  setupViewController.swift
 //  osamIotApp
 //
 //  Created by osam on 22/10/2019.
@@ -8,12 +8,20 @@
 
 import UIKit
 
-class initViewController: UIViewController {
+class setupViewController: UIViewController {
 
+    @IBOutlet weak var textField: UITextField!
+    @IBAction func textFieldChanged(_ sender: Any) {
+        if(textField.text == ""){
+            adjustBtn.isEnabled = false
+        }
+        else{
+            adjustBtn.isEnabled = true
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        viewMove();
+        adjustBtn.isEnabled = false
         // Do any additional setup after loading the view.
     }
 
@@ -22,11 +30,9 @@ class initViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func viewMove(){
-        let time = DispatchTime.now() + .seconds(0)
-        DispatchQueue.main.asyncAfter(deadline: time){
-            self.performSegue(withIdentifier: "mainSegue", sender: nil)
-        }
+    @IBOutlet weak var adjustBtn: UIButton!
+    @IBAction func adjustBtn(_ sender: Any) {
+        NotificationCenter.default.post(name : NSNotification.Name("labelTextRefresh"), object: nil)
     }
 
     /*
