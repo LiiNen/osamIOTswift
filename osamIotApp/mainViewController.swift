@@ -25,6 +25,7 @@ class mainViewController: UIViewController {
         labelTextRefresh()
         NotificationCenter.default.addObserver(self, selector: #selector(labelTextRefresh), name: NSNotification.Name("labelTextRefresh"), object: nil)
         // Do any additional setup after loading the view.
+        timerefresh()
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,6 +44,18 @@ class mainViewController: UIViewController {
         label4.text =  userdefaultExists(key: "label4") ? UserDefaults.standard.string(forKey: "label4") : label4.text
     }
     
+    @IBOutlet weak var refreshBtn: UIButton!
+    @IBAction func refreshBtn(_ sender: Any) {
+        self.viewDidLoad()
+    }
+    
+    @IBOutlet weak var testlabel: UILabel!
+    func timerefresh(){
+        let date = Date()
+        let dateForm = DateFormatter()
+        dateForm.dateFormat = "yyyy-MM-dd  HH:mm:ss"
+        testlabel.text = dateForm.string(from: date)
+    }
 
     /*
     // MARK: - Navigation

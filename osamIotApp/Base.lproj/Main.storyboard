@@ -131,6 +131,21 @@
                                             <segue destination="BJU-OK-njX" kind="show" id="ZT9-cq-TPu"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9F1-Ik-DFe">
+                                        <rect key="frame" x="38" y="547" width="101" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="refresh"/>
+                                        <connections>
+                                            <action selector="refreshBtn:" destination="Udu-ET-vmI" eventType="touchUpInside" id="Hl8-bx-lpe"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loj-ZD-Fkf">
+                                        <rect key="frame" x="60" y="489" width="255" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -168,11 +183,13 @@
                         <outlet property="label2" destination="9BC-6O-vDU" id="bar-ic-y40"/>
                         <outlet property="label3" destination="txg-Cd-Kfr" id="mpn-Fg-rz8"/>
                         <outlet property="label4" destination="ba9-R8-4QB" id="TtM-w3-v4X"/>
+                        <outlet property="refreshBtn" destination="9F1-Ik-DFe" id="Tsh-wy-0mU"/>
+                        <outlet property="testlabel" destination="loj-ZD-Fkf" id="a0E-c7-BXr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RHs-tW-PUw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="446" y="861"/>
+            <point key="canvasLocation" x="445.60000000000002" y="859.52023988005999"/>
         </scene>
         <!--Setup View Controller-->
         <scene sceneID="x8o-M9-A9D">
@@ -397,7 +414,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvr-hI-ffL">
-                                <rect key="frame" x="137.5" y="562" width="100" height="60"/>
+                                <rect key="frame" x="138" y="562" width="100" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="BZH-a0-i6G"/>
                                     <constraint firstAttribute="height" constant="60" id="ogA-d5-vlA"/>
