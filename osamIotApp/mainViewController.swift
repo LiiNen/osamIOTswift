@@ -63,48 +63,50 @@ class mainViewController: UIViewController {
     
     @IBOutlet weak var CImage1: UIImageView!
     @IBOutlet weak var CImage1Height: NSLayoutConstraint!
+    @IBOutlet weak var CImage2: UIImageView!
+    @IBOutlet weak var CImage2Height: NSLayoutConstraint!
+    @IBOutlet weak var CImage3: UIImageView!
+    @IBOutlet weak var CImage3Height: NSLayoutConstraint!
+    @IBOutlet weak var CImage4: UIImageView!
+    @IBOutlet weak var CImage4Height: NSLayoutConstraint!
     /*test.txt file format
     ** x.y.z.w
     ** x, y, z and w are integer-0~3-representing height
     ** 0 is least, 3 is most
     */
     func checkHeight(){
-        if let url2 = URL(string: localURL + "/Desktop/test.txt"){
+        let constraints : [NSLayoutConstraint] = [CImage1Height, CImage2Height, CImage3Height, CImage4Height]
+        let cImages : [UIImageView] = [CImage1, CImage2, CImage3, CImage4]
+        if let url2 = URL(string: serverURL + "/Desktop/data.txt"){
+            //UIApplication.shared.open(url2, options: [:])
             do{
                 let contents = try String(contentsOf: url2)
                 print(contents)
                 
                 let arr = contents.components(separatedBy: ".")
+                var index = 0
                 for tok in arr {
-                    print(tok + " clear ")
-                    var temp = CImage1Height.constant
-                    let reach = CGFloat(Int(tok)! * 40)
-                    switch temp > reach {
-                    case true:
-                        while(temp != reach){
-                            temp-=1
-                            CImage1Height.constant = temp
-                        }
-                        break
-                    case false:
-                        while(temp != reach){
-                            temp+=1
-                            CImage1Height.constant = temp
-                        }
+                    if(index == 4){
                         break
                     }
-                    //change right away
-                    //CImage1Height.constant = CGFloat(Int(tok)! * 40)
+                    else{
+                        cImages[index].isHidden = false
+                        print(tok + " clear ")
+                        constraints[index].constant = CGFloat(Int(tok)! * 40)/10
+                        UIView.animate(withDuration: 1){
+                            self.view.layoutIfNeeded()
+                            index = index+1
+                        }
+                    }
                 }
-                
-                
             } catch {
                 print("contents err")
             }
         }
     }
     
-    let localURL = "http://192.168.196.4:2387"
+    //let localURL = "http://192.168.196.4:2387"
+    let serverURL = "http://8344aa13.ngrok.io"//:2387"
     /*
     // MARK: - Navigation
 
