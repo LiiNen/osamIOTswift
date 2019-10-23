@@ -58,12 +58,20 @@ class mainViewController: UIViewController {
         
         
         
-        if let url = URL(string: "http://192.168.196.4:2387"){
-            UIApplication.shared.open(url, options: [:])
-        }
+        //if let url = URL(string: localURL){
+        //   UIApplication.shared.open(url, options: [:])
+        //}
         
+        if let url2 = URL(string: localURL + "/Desktop/test.txt"){
+            do{
+                let contents = try String(contentsOf: url2)
+                print(contents)
+            } catch {
+                print("contents err")
+            }
+        }
     }
-
+    let localURL = "http://192.168.196.4:2387"
     /*
     // MARK: - Navigation
 
