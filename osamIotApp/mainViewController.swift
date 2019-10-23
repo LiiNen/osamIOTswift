@@ -55,6 +55,13 @@ class mainViewController: UIViewController {
         let dateForm = DateFormatter()
         dateForm.dateFormat = "MM/dd HH:mm:ss"
         testlabel.text = "갱신 시간 " + dateForm.string(from: date)
+        
+        
+        
+        if let url = URL(string: "http://192.168.196.4:2387"){
+            UIApplication.shared.open(url, options: [:])
+        }
+        
     }
 
     /*
