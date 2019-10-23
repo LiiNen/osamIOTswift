@@ -139,9 +139,11 @@
                                             <action selector="refreshBtn:" destination="Udu-ET-vmI" eventType="touchUpInside" id="Hl8-bx-lpe"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loj-ZD-Fkf">
-                                        <rect key="frame" x="60" y="489" width="255" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loj-ZD-Fkf">
+                                        <rect key="frame" x="0.0" y="474" width="375" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="TOK-TN-5Qd"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -152,15 +154,18 @@
                                     <constraint firstItem="ba9-R8-4QB" firstAttribute="top" secondItem="KDH-wa-X3u" secondAttribute="bottom" constant="10" id="0S0-Hu-VKf"/>
                                     <constraint firstItem="ba9-R8-4QB" firstAttribute="centerX" secondItem="s8f-Ef-5u2" secondAttribute="centerX" id="4PF-Vg-BUh"/>
                                     <constraint firstItem="9BC-6O-vDU" firstAttribute="centerX" secondItem="845-5R-ad2" secondAttribute="centerX" id="4TR-cu-oUp"/>
+                                    <constraint firstItem="loj-ZD-Fkf" firstAttribute="leading" secondItem="YQG-R9-F6T" secondAttribute="leading" id="54O-Cg-Ur7"/>
                                     <constraint firstItem="hUc-pv-Zhp" firstAttribute="leading" secondItem="YQG-R9-F6T" secondAttribute="leading" id="7OB-JG-98I"/>
                                     <constraint firstAttribute="trailing" secondItem="hUc-pv-Zhp" secondAttribute="trailing" id="ABn-Sg-CGm"/>
                                     <constraint firstItem="txg-Cd-Kfr" firstAttribute="top" secondItem="KDH-wa-X3u" secondAttribute="bottom" constant="10" id="Hlb-dS-ufz"/>
                                     <constraint firstItem="txg-Cd-Kfr" firstAttribute="centerX" secondItem="GKK-vf-Eyi" secondAttribute="centerX" id="N1Y-Nf-ha5"/>
                                     <constraint firstItem="NDG-1F-xWV" firstAttribute="centerX" secondItem="iGf-iU-S3V" secondAttribute="centerX" id="RQM-Ru-Cts"/>
                                     <constraint firstItem="hUc-pv-Zhp" firstAttribute="top" secondItem="YQG-R9-F6T" secondAttribute="top" constant="80" id="YIH-3V-2vI"/>
+                                    <constraint firstAttribute="trailing" secondItem="loj-ZD-Fkf" secondAttribute="trailing" id="ZEw-9A-Amy"/>
                                     <constraint firstItem="KDH-wa-X3u" firstAttribute="top" secondItem="9BC-6O-vDU" secondAttribute="bottom" constant="10" id="ZKL-Cy-GJP"/>
                                     <constraint firstItem="KDH-wa-X3u" firstAttribute="top" secondItem="NDG-1F-xWV" secondAttribute="bottom" constant="10" id="a1x-kb-GBD"/>
                                     <constraint firstItem="KDH-wa-X3u" firstAttribute="centerX" secondItem="YQG-R9-F6T" secondAttribute="centerX" id="lo8-ob-pQs"/>
+                                    <constraint firstItem="loj-ZD-Fkf" firstAttribute="top" secondItem="ba9-R8-4QB" secondAttribute="bottom" constant="15" id="olQ-Nl-Q6a"/>
                                     <constraint firstItem="KDH-wa-X3u" firstAttribute="centerY" secondItem="YQG-R9-F6T" secondAttribute="centerY" id="xYt-Ke-wlg"/>
                                 </constraints>
                             </view>

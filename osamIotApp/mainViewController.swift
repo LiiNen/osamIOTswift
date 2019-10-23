@@ -53,8 +53,8 @@ class mainViewController: UIViewController {
     func timerefresh(){
         let date = Date()
         let dateForm = DateFormatter()
-        dateForm.dateFormat = "yyyy-MM-dd  HH:mm:ss"
-        testlabel.text = dateForm.string(from: date)
+        dateForm.dateFormat = "MM/dd HH:mm:ss"
+        testlabel.text = "갱신 시간 " + dateForm.string(from: date)
     }
 
     /*
