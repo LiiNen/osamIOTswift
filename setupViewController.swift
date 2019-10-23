@@ -84,6 +84,9 @@ class setupViewController: UIViewController {
     }
     @IBOutlet weak var totalBtn: UIButton!
     @IBAction func totalBtn(_ sender: Any) {
+        if(!adjustBtn1.isEnabled && !adjustBtn2.isEnabled && !adjustBtn3.isEnabled && !adjustBtn4.isEnabled){
+            modiAlert(alertMessage: "변경사항이 없습니다")
+        }
         if(adjustBtn1.isEnabled){
             adjustBtn1.sendActions(for: .touchUpInside)
         }
@@ -114,6 +117,9 @@ class setupViewController: UIViewController {
         textFieldInit()
         
         adjustBtn1.isEnabled = false
+        //adjustBtn1.layer.borderColor = UIColor.gray.cgColor
+        //adjustBtn1.layer.borderWidth = 1
+        //adjustBtn1.layer.cornerRadius = 5
         adjustBtn2.isEnabled = false
         adjustBtn3.isEnabled = false
         adjustBtn4.isEnabled = false
@@ -124,6 +130,14 @@ class setupViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //alert function
+    func modiAlert(alertMessage : String){
+        let myAlert = UIAlertController(title: "삐빅!", message: alertMessage, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "확인", style: .default, handler: nil)
+        myAlert.addAction(okAction)
+        present(myAlert, animated: true, completion: nil)
     }
     
     
