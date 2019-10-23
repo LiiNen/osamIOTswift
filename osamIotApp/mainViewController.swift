@@ -56,21 +56,54 @@ class mainViewController: UIViewController {
         dateForm.dateFormat = "MM/dd HH:mm:ss"
         testlabel.text = "갱신 시간 " + dateForm.string(from: date)
         
-        
-        
-        //if let url = URL(string: localURL){
-        //   UIApplication.shared.open(url, options: [:])
-        //}
-        
+        checkHeight()
+    }
+    
+    
+    
+    @IBOutlet weak var CImage1: UIImageView!
+    @IBOutlet weak var CImage1Height: NSLayoutConstraint!
+    /*test.txt file format
+    ** x.y.z.w
+    ** x, y, z and w are integer-0~3-representing height
+    ** 0 is least, 3 is most
+    */
+    func checkHeight(){
         if let url2 = URL(string: localURL + "/Desktop/test.txt"){
             do{
                 let contents = try String(contentsOf: url2)
                 print(contents)
+                
+                let arr = contents.components(separatedBy: ".")
+                for tok in arr {
+                    print(tok + " clear ")
+                    var temp = CImage1Height.constant
+                    let reach = CGFloat(Int(tok)! * 40)
+                    switch temp > reach {
+                    case true:
+                        while(temp != reach){
+                            temp-=1
+                            CImage1Height.constant = temp
+                        }
+                        break
+                    case false:
+                        while(temp != reach){
+                            temp+=1
+                            CImage1Height.constant = temp
+                        }
+                        break
+                    }
+                    //change right away
+                    //CImage1Height.constant = CGFloat(Int(tok)! * 40)
+                }
+                
+                
             } catch {
                 print("contents err")
             }
         }
     }
+    
     let localURL = "http://192.168.196.4:2387"
     /*
     // MARK: - Navigation
