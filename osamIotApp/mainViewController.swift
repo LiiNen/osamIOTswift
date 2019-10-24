@@ -88,12 +88,13 @@ class mainViewController: UIViewController {
                     }
                     else{
                         cImages[index].isHidden = false
-                        print(tok + " clear ")
-                        constraints[index].constant = CGFloat(Int(tok)! * 40)/10
-                        UIView.animate(withDuration: 1){
-                            self.view.layoutIfNeeded()
-                            index = index+1
-                        }
+                        let tempTok : Int
+                        if(Int(tok)! >= 7) {tempTok = 7}
+                        else if(Int(tok)! <= 1 ) {tempTok = 1}
+                        else {tempTok = Int(tok)!}
+                        constraints[index].constant = CGFloat((7-tempTok) * 20)
+                        index = index+1
+                        print("\(index) number .. before:  \(Int(tok)!) / after: \(tempTok)")
                     }
                 }
             } catch {
@@ -102,7 +103,7 @@ class mainViewController: UIViewController {
         }
     }
     
-    let serverURL = "http://9379fa12.ngrok.io"
+    let serverURL = "http://25f4ce50.ngrok.io"
     
     /*
     // MARK: - Navigation

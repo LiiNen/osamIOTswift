@@ -170,7 +170,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9F1-Ik-DFe">
                                         <rect key="frame" x="38" y="547" width="101" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="refresh"/>
+                                        <state key="normal" title="새로고침"/>
                                         <connections>
                                             <action selector="refreshBtn:" destination="Udu-ET-vmI" eventType="touchUpInside" id="Hl8-bx-lpe"/>
                                         </connections>
@@ -510,7 +510,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mVw-Bf-hFS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2116" y="104"/>
+            <point key="canvasLocation" x="2073" y="103"/>
         </scene>
         <!--Init View Controller-->
         <scene sceneID="aPf-69-KMs">
@@ -580,7 +580,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i6v-Ob-AAW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-383.19999999999999" y="103.44827586206897"/>
+            <point key="canvasLocation" x="-350" y="103"/>
         </scene>
         <!--mainNavigationController-->
         <scene sceneID="FEy-3P-VeB">

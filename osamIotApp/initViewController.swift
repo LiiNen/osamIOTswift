@@ -23,7 +23,7 @@ class initViewController: UIViewController {
     }
     
     func viewMove(){
-        let time = DispatchTime.now() + .seconds(0)
+        let time = DispatchTime.now() + .seconds(1)
         DispatchQueue.main.asyncAfter(deadline: time){
             self.performSegue(withIdentifier: "mainSegue", sender: nil)
         }

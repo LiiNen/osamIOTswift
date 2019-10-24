@@ -295,7 +295,7 @@
 				DEVELOPMENT_TEAM = PR349UZP36;
 				INFOPLIST_FILE = osamIotApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "LiiNen-com.github.osamIotApp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.osamIotApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
@@ -309,7 +309,7 @@
 				DEVELOPMENT_TEAM = PR349UZP36;
 				INFOPLIST_FILE = osamIotApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "LiiNen-com.github.osamIotApp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.osamIotApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
