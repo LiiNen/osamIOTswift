@@ -70,15 +70,12 @@ class mainViewController: UIViewController {
     @IBOutlet weak var CImage4: UIImageView!
     @IBOutlet weak var CImage4Height: NSLayoutConstraint!
     /*test.txt file format
-    ** x.y.z.w
-    ** x, y, z and w are integer-0~3-representing height
-    ** 0 is least, 3 is most
+    ** x.y.z.w.
     */
     func checkHeight(){
-        let constraints : [NSLayoutConstraint] = [CImage1Height, CImage2Height, CImage3Height, CImage4Height]
-        let cImages : [UIImageView] = [CImage1, CImage2, CImage3, CImage4]
+        let constraints : [NSLayoutConstraint] = [CImage1Height, CImage3Height, CImage2Height, CImage4Height]
+        let cImages : [UIImageView] = [CImage1, CImage3, CImage2, CImage4]
         if let url2 = URL(string: serverURL + "/Desktop/data.txt"){
-            //UIApplication.shared.open(url2, options: [:])
             do{
                 let contents = try String(contentsOf: url2)
                 print(contents)
@@ -105,8 +102,8 @@ class mainViewController: UIViewController {
         }
     }
     
-    //let localURL = "http://192.168.196.4:2387"
-    let serverURL = "http://8344aa13.ngrok.io"//:2387"
+    let serverURL = "http://9379fa12.ngrok.io"
+    
     /*
     // MARK: - Navigation
 
