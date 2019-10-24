@@ -4,20 +4,22 @@
 
 ### 사용 방법
 
-#### 설치 조건
-  * **macOS high sierra 10.12.6** 이상 <br>
-  * **Xcode 9.2** 이상의 버전 <br>
-  * **iOS SDK 12.0** 이상의 iOS 기기 보유 <br>
+ #### 설치 조건
+   * **macOS high sierra 10.12.6** 이상 <br>
+   * **Xcode 9.2** 이상의 버전 <br>
+   * **iOS SDK 12.0** 이상의 iOS 기기 보유 <br>
      > iPhone 뿐만 아니라 iPad에서도 설치 및 실행은 가능하지만, ui 문제상 iPhone7 ~ iPhoneX 를 권장함 (SE제외) <br>
   
-#### 설치 안내
-  1. 준비된 iOS기기를 usb를 이용해 macOS에 연결한다. <br>
-  2. 프로젝트 코드를 Xcode에서 실행시킨다. <br>
-  3. build 대상을 Xcode의 가상머신이 아닌, usb로 연결한 user device로 변경하고 실행 <br>
-  4. iOS 기기에서 동작 확인 <br>
+ #### 설치 안내
+   1. 준비된 iOS기기를 usb를 이용해 macOS에 연결한다. <br>
+   2. 프로젝트 코드를 Xcode에서 실행시킨다. <br>
+   3. build 대상을 Xcode의 가상머신이 아닌, usb로 연결한 user device로 변경하고 실행 <br>
+   4. iOS 기기에서 동작 확인 <br>
   
-#### 실행 안내
-  * [재고를 알려줘!](https://github.com/JinsungGwag/Checkstorage) 프로젝트 참고
+ #### 실행 안내
+   * [재고를 알려줘!](https://github.com/JinsungGwag/Checkstorage) 프로젝트 참고<br>
+   
+<br>
 
 ### 파일/디렉토리 정보 및 목록
   * /osamIotApp/initViewController.swift
