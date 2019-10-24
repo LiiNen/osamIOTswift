@@ -2,9 +2,18 @@
 ## 프로젝트 설명
 > 2019 osam에서 진행한 IoT 프로젝트인 [재고를 알려줘!](https://github.com/JinsungGwag/Checkstorage) 의 iOS Application이다.<br>
 
+### 목차
+- [1. 사용 방법](#사용-방법) <br>
+  * [1-1. 설치 환경](#설치-환경) <br>
+  * [1-2. 설치 안내](#설치-안내) <br>
+  * [1-3. 실행 안내](#실행-안내) <br>
+- [2. 파일 정보 및 목록](#파일-정보-및-목록) <br>
+- [3. 버그 신고](#contact-me) <br>
+
+
 ### 사용 방법
 
- #### 설치 조건
+ #### 설치 환경
    * **macOS high sierra 10.12.6** 이상 <br>
    * **Xcode 9.2** 이상의 버전 <br>
    * **iOS SDK 12.0** 이상의 iOS 기기 보유 <br>
@@ -21,7 +30,7 @@
    
 <br>
 
-### 파일/디렉토리 정보 및 목록
+### 파일 정보 및 목록
   * /osamIotApp/initViewController.swift
     > 대기 화면 <br>
     > 어플리케이션이 켜질 때 팀/프로젝트 소개가 이루어지는 화면.<br>
@@ -43,4 +52,5 @@
   
 
 <br><br><br>
-Contact me: kjeonghoon065@gmail.com
+### Contact me
+ > kjeonghoon065@gmail.com
